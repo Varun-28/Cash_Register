@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+    background: url("img/repeated-square.png");
+    color: #185ADB;
+}
+.container{
+    background-color: rgb(239, 239, 239, 0.8);
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-left: double 5px #185ADB;
+    border-right: double 5px #185ADB;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 80%;
+    }
+}
+.container>*{
+    margin: 10px;
+}
+.heading, .description{
+    margin-top: 20px;
+}
+.input_fields{
+    margin-top: 4%;
+    font-weight: 600;
+}
+.input_fields input{
+    border: solid 2px #FFC947;
+    height: 30px;
+    border-radius: 3px;
+}
+button{
+    padding: 10px 20px;
+    color: #185ADB;
+    border: solid 2px #185ADB;
+    background-color: #FFC947;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.change_table caption{
+    font-weight: 600;
+}
+.change_table{
+    width: 80%;
+}
+.change_table td, .change_table th,.change_table{
+    border: solid 2px #185ADB;
+}
+.change_table td{
+    width: 10%;
+}
+caption{
+    margin-bottom: 5px;
+}
+#error_msg{
+    font-weight: 600;
+    text-decoration: underline #FFC947;
+    padding: 5px;
+}
+.hide,#check,table{
+    display: none;
+}
