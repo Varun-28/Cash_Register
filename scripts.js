@@ -19,7 +19,7 @@ nextBtn.addEventListener("click", function hideShow(){
 checkBtn.addEventListener('click', function validateBillAndCashAmount() {
     hideMessage();
     if(billAmount.value === '' || cashGiven.value === ''){
-        showMessage("Please Fill the Bill Amount");
+        showMessage("Please Fill the Both Amounts");
     }else{
         hideMessage();
         document.querySelector("table").style.display = "block";
